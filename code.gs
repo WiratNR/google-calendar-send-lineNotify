@@ -18,14 +18,12 @@ function myFunction() {
       "เวลา : " + convertTimeTothai_(row.getStartTime()) + " ถึง " + convertTimeTothai_(row.getEndTime()) + "\n\n"
   })
 
-
-  if (events.length > 0) {
-    // console.log(txt)
-    sendLineNotify(txt, TOKEN)
-  }
+  // ถ้ามีกิจกรรม ก็จะทำการแจ้งเตือน
+ if (events.length > 0) sendLineNotify(txt, TOKEN)
 
 }
 
+//ฟังก์ชั่น Library แจงเตือน Linenotify
 function sendLineNotify(txt, TOKEN) {
   const notify = new lib.lineNotify(TOKEN)
   notify.sendText(txt)
