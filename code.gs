@@ -1,6 +1,7 @@
 //credit--------------------TheDuctTech---------------
 
 const CALENDAR_ID = "CALENDAR_ID"
+const TOKEN ="token"
 
 const DATEBACK = true // กำหนดประเภทการแจ้งเตือน 
 
@@ -27,7 +28,8 @@ function myFunction() {
       "เวลา : " + convertTimeTothai_(row.getStartTime()) + " ถึง " + convertTimeTothai_(row.getEndTime()) + "\n\n"
   })
 
-  console.log(txt)
+  const notify = new lib.lineNotify(TOKEN)
+  notify.sendText(txt)
 }
 
 
