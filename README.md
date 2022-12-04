@@ -1,2 +1,2 @@
 # google-calendar-send-lineNotify
-https://youtu.be/tz-SJvlcXDQ
+วิธีใช้ : https://youtu.be/tz-SJvlcXDQ
