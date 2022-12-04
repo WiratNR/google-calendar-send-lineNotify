@@ -15,7 +15,7 @@ function myFunction() {
     txt += "\n\nเรื่อง : " + row.getTitle() + "\n" +
       "รายละเอียด  : " + row.getDescription() + "\n" +
       "กำหนดการ : " + convertDateTothai_(row.getStartTime()) + "\n" +
-      "เวลา : " + convertTimeTothai_(row.getStartTime()) + " ถึง " + convertTimeTothai_(row.getEndTime()) + "\n\n"
+      "เวลา : " + convertTimeTothai_(row.getStartTime()) + " ถึง " + convertTimeTothai_(row.getEndTime()) + "\n"
   })
 
   // ถ้ามีกิจกรรม ก็จะทำการแจ้งเตือน
